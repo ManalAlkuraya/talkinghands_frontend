@@ -13,10 +13,6 @@ export default function Employee() {
           
           <Link to="/employeedoctor">
           <button className="servicedeaf"><span>employeedoctor</span></button></Link>
-
-          {/* <Link to="/">
-        <button className="servicedeaf">Volunteer</button></Link> */}
-
 </div>
         <Outlet/>
       </main>

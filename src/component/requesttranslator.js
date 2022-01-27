@@ -1,14 +1,12 @@
-import { NavLink ,Link ,Outlet} from "react-router-dom";
-import {getRequesttranslator} from "../service";
+import { NavLink, Link, Outlet } from "react-router-dom";
+import { getRequesttranslator } from "../service";
 import React from "react";
+
 export default function Requesttranslator() {
-
-  let requesttranslator= getRequesttranslator();
-   
-    return (
-      <main style={{ padding: "1rem 0" }}>
-
-        <div style={{ display: "flex", color: "#43a6ac" }}>
+  let requesttranslator = getRequesttranslator();
+  return (
+    <main style={{ padding: "1rem 0" }}>
+      <div style={{ display: "flex", color: "#43a6ac" }}>
 
         <nav
           style={{
@@ -17,21 +15,21 @@ export default function Requesttranslator() {
           }}
         >
 
-        
-        {requesttranslator.map(translators=>(
-            <NavLink 
-            style={({ isActive }) => ({ display: "block", margin: "1rem 0", color: isActive ? "#43a6ac" : "" })}
 
-            to={`/requesttranslator/${translators.id}`}
-            key={translators.id}
+          {requesttranslator.map(translators => (
+            <NavLink
+              style={({ isActive }) => ({ display: "block", margin: "1rem 0", color: isActive ? "#43a6ac" : "" })}
+
+              to={`/requesttranslator/${translators.id}`}
+              key={translators.id}
             >
-                {translators.name}
+              {translators.name}
             </NavLink>
-        
-        ))}
+
+          ))}
         </nav>
-        </div>
-      <Outlet/>
-      </main>
-    );
-    }
+      </div>
+      <Outlet />
+    </main>
+  );
+}

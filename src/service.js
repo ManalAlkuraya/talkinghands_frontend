@@ -1,9 +1,6 @@
 let requesttranslator = [{
     id: 1,
     name: "Disaster distress Helpline",
-    // number: 1995,
-    // amount: "$10,800",
-    // due: "12/05/1995"
 },
 {
     id: 2,
@@ -41,17 +38,13 @@ export function getOtherservice() {
 
 
 // training 
-let training=[{
-    id:7,
-    name:"Sign Lnguage Training",
+let training = [{
+    id: 7,
+    name: "Sign Lnguage Training",
 },
 {
-    id:8,
-    name:"Job Training",
-},
-{
-    // id:9,
-    // name:"Parent Education and Auditory-verbal"
+    id: 8,
+    name: "Job Training",
 }
 ]
 export function getTraining() {
