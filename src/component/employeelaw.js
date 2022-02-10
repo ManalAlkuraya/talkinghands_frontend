@@ -10,7 +10,7 @@ export default class EmployeeLaw extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://talkinghandbackend.herokuapp.com/api/serv")
+        axios.get("api/serv")
             .then(results => {
                 const lawyerarray = results.data;
                 this.setState({ lawyerarray });
@@ -18,7 +18,7 @@ export default class EmployeeLaw extends Component {
     }
 
     deleteLawyer(serviceID) {
-        axios.delete(`https://talkinghandbackend.herokuapp.com/api/serv/delete/${serviceID}`)
+        axios.delete(`api/serv/delete/${serviceID}`)
             .then(resul => {
                 const lawyerarray = this.state.lawyerarray.filter
                     (HearingImpaireds => HearingImpaireds.serviceID !== serviceID);

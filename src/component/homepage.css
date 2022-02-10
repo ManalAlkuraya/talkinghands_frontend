@@ -1,3 +1,66 @@
+/* body { 
+    background-image: url('img.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  } */
+  /*
+  .signlanguage2{
+    background-image: url("");
+    background-color: #064420;
+    padding: 100px;
+    margin-left: 30%;
+    width: 50%;
+    border-radius: 4%;
+    border-color: #EA5C2B;
+    color: white;
+    border-left-style: outset;
+  }
+  .label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  .submit {
+    display: inline-block;
+    border: none;
+    color: #ada9a9;
+    background-color: #064420;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    margin: 5px;
+    margin-left: 50px;
+  }
+  
+  .submit span {
+    position: relative;
+    transition: 0.5s;
+    color: white;
+  
+  }
+  
+  .submit span:after {
+    
+    opacity: 0;
+    transition: 0.5s;
+   
+  }
+  
+  .submit:hover span {
+    padding-right: 25px;
+    color: #EA5C2B;
+    
+  }
+  
+  .submit:hover span:after {
+    opacity: 1;
+    right: 0;
+   
+  }*/
   /*home page */
   .btnlogin{
     background-color: #edf3ef;
@@ -77,16 +140,21 @@
     margin-bottom: 50px;
   }
   .homepara{
+    /* text-align: center; */
+    /* margin-left: 35%; */
     padding-top: 20px;
     padding-left: 40px;
     font-style: italic;
     font-variant: small-caps;
+    /* color: #EA5C2B; */
   }
   .imghome{
     margin-left: 10%;
   }
   .boxhome{
+    /* display:flex; */
     font-style: italic;
+    /* font-variant: small-caps; */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     width: 70%;
@@ -200,11 +268,38 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20px;
+    margin-right: 18%;
     border-top-style: dotted;
     border-right-style: solid;
     border-bottom-style: dotted;
     border-left-style: solid;
   }
+  #signup {
+    width: 30%;
+    border-color:#EA5C2B ;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    display: table;
+  }
+  .btnregister{
+    background-color: none;
+    border: none;
+    color: #EA5C2B;
+    font-size: 2ch;
+    font-style: italic;
+  }
+  .btnregister :hover {
+    background-color: #f8e0d7;
+    color: #325a38;
+  } 
   .hspan{
     text-align: center;
     padding-bottom: 0rem;
@@ -219,16 +314,21 @@
   input[type=text], select {
     width: 50%;
     padding: 12px 20px;
-    margin-left: 20px;
-    display: inline-block;
+    margin-right: 30px;
+    margin-top: 0px;
+    /* margin: 4px 0; */
+    /* display: inline-block; */
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    /* display: table;
+    clear: both;
+    float: right; */
   }
   input[type=password], select {
     width: 50%;
     padding: 12px 20px;
-    margin-left: 30px;
+    margin-left: -30px;
     margin-top: 10px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -254,6 +354,7 @@
     margin-left: 35px;
     margin-bottom: 15px;
     margin-top: 10px;
+    /* margin: 15px; */
   }
   .buttons span {
     cursor: pointer;
@@ -286,9 +387,13 @@
     border-left: 6px solid #325a38;
   }
   /*subscribe button*/
+  .secondfooter{
+    display:flex;
+    background-color: #edf3ef;
+
+  }
   .subscribe1{
-    margin-top: 23%;
-    margin-left: 10%;
+    margin-left: 35%;
   }
   .subscribe{
     display: inline-block;
@@ -305,11 +410,12 @@
     width: 100px;
     transition: all 0.5s;
     cursor: pointer;
+    /* margin-left: 30%;*/
     margin-right: 0px; 
   }
  .imgfoter{
-   margin-top: 22%;
-   margin-left: 10%;
+  
+   margin-left: 0%;
  }
   /* translators page*/
   .service {
@@ -539,13 +645,20 @@
   margin-left: 25%;
 }
 .label{
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  
   /* float: left; */
+  /* width: 25%;
+  margin-top: 6px; */
+}
+.col-25 {
+  float: left;
   width: 25%;
   margin-top: 6px;
 }
 .submit {
+  /* display: inline-block; */
   border: none;
   color: #203b24;
   background-color: white;
@@ -556,6 +669,7 @@
 }
 
 .submit span {
+  /* position: relative; */
   transition: 0.5s;
   color: #28492d;
 
@@ -600,13 +714,13 @@
   box-shadow: 5px 10px 18px #888888;
 }
 /* #Zoom{
-  margin-left: 25%;
+  margin-right: 50%;
 } */
 #FaceTime{
-  margin-left: 25%;
+  margin-left: 29%;
 }
 #Teams{
-  margin-left: 25%;
+  margin-left: 29%;
 }
 
 /*end translators page*/
@@ -732,3 +846,222 @@ table{
 .requestlawyerpara{
   text-align: center;
 }
+
+/*
+  .signlanguage{
+      background-color: peachpuff;
+      padding: 100px;
+      padding-left: 30%;
+  }
+  .signtrain{
+      display: flex;
+      background-color:paleturquoise;
+      width: 90%;
+      margin-left: 80px;
+      border-radius: 50px;
+  }
+  .signtrain >div{
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .img{
+      padding-top: 50px;
+      padding-left: 10%;
+  }
+  .para{
+    padding-left: 10%;
+  }
+
+  .parenttrain{
+      background-color: rgb(214, 248, 248);
+      width: 50%;
+      margin-left: 25%;
+      padding: 50px;
+      border-radius: 5%;
+      opacity: 0.4;
+  }
+h1{
+    text-align: center;
+    padding-bottom: 0rem;
+    text-shadow: 1px 2px 2px #000000;
+    text-transform: uppercase;
+    color: #565858;
+    letter-spacing: 0.33rem;
+  }
+  h1 span{
+  color: #43a6ac;
+  }
+  h3{
+    padding-bottom: 0rem;
+    text-shadow: 1px 2px 2px #000000;
+    text-transform: uppercase;
+    color: #3f4141;
+    letter-spacing: 0.3rem; 
+  }
+  
+  h4{
+    text-align: center;
+    padding-bottom: 0rem;
+    text-shadow: 1px 2px 2px #000000;
+    text-transform: uppercase;
+    color: #565858;
+    letter-spacing: 0rem;
+  }
+  h4 span{
+  color: #43a6ac;
+  }*/
+  /*end "log in"word and "time"*/
+
+ /*
+  .bigdiv{
+     
+      display: flex;
+  }
+  .bigdiv >div{
+    width: 50%;
+    margin: 20px;*/
+    /* text-align: center; *//*
+    line-height: 75px;
+  }
+
+  .login {
+    width: 50%;
+    border-color:#43a6ac ;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 7%;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+  }
+  .signup{
+    width: 50%;
+    border-color:#e97713 ;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 44%;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+  }
+  input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin-left: 30px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=password], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin-left: 30px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 30%;
+    padding: 10px 15px;
+    margin-left: 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .buttons {
+    display: inline-block;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    border: 4px double #43a6ac;
+    color: #43a6ac;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 3px;
+  }*//*
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }*/
+  /* button:hover {
+    background-color: aliceblue;
+  } *//*
+  button:hover span {
+    padding-right: 25px;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }*//*
+  .success {
+    background-color: #c4ecee;
+    margin-top: 5px;
+    border-left: 6px solid #43a6ac;
+  }*/
+
+  /*subscribe button*//*
+  .subscribe{
+    display: inline-block;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    border: 4px double #43a6ac;
+    color: #43a6ac;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-right: 10px;
+  }
+  .subscribeh2{
+    margin-left: 35%;
+  }
+ */
+  /*end form login *//*
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(242, 242, 242);
+  }
+  .msg{
+    background-color: #0e0e0e;
+  }*/
