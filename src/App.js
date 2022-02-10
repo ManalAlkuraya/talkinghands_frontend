@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import axios from "axios";
 import '../src/component/homepage.css';
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import React from "react";
 
